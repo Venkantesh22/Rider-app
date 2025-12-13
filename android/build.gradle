@@ -1,0 +1,41 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
+// PASTE THIS AT THE END OF android/build.gradle
+
+subprojects {
+    def configureNamespace = {
+        if (project.hasProperty("android")) {
+            project.android {
+                if (namespace == null) {
+                    println "Fixing missing namespace for ${project.name}"
+                    namespace project.group
+                }
+            }
+        }
+    }
+
+    if (project.state.executed) {
+        configureNamespace()
+    } else {
+        project.afterEvaluate {
+            configureNamespace()
+        }
+    }
+}

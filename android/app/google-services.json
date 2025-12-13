@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "865203305154",
+    "project_id": "spingo-ride-odisha",
+    "storage_bucket": "spingo-ride-odisha.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865203305154:android:8d81b9d29a7d059ad9995b",
+        "android_client_info": {
+          "package_name": "com.spingoride.riderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqLccNDVgkCVBV12BITaSv5rvoh7QykY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865203305154:android:209306ba1c718572d9995b",
+        "android_client_info": {
+          "package_name": "com.spingoride.userapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqLccNDVgkCVBV12BITaSv5rvoh7QykY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

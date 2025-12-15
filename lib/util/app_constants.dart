@@ -4,7 +4,7 @@ import 'package:ride_sharing_user_app/util/images.dart';
 
 class AppConstants {
   static const String appName = 'Spingo Ride Driver';
-  static const String baseUrl = 'https://spingoride.in';
+  static const String baseUrl = 'https://admin.spingoride.com/';
   static const String polylineMapKey = 'AIzaSyDiZyseMRwettGWjkxYs56x3FALA4x48vE';
   static const double appVersion = 2.1;   /// Flutter SDK 3.24.0
   static const String configUri = '/api/driver/configuration';
